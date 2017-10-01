@@ -1,3 +1,4 @@
 (fp_lib_table
   (lib (name Socket_Strips)(type KiCad)(uri F:\Proyecto\Proyecto_Bioimpedanciometro\HUELLAS_MIAS.pretty\Socket_Strips.pretty)(options "")(descr ""))
+  (lib (name Crystals)(type KiCad)(uri F:\Proyecto\Proyecto_Bioimpedanciometro\HUELLAS_MIAS.pretty\Crystals.pretty)(options "")(descr ""))
 )

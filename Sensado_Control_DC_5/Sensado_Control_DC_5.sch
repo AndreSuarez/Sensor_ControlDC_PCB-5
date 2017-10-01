@@ -78,7 +78,7 @@ U 1 1 59CD3FA9
 P 1130 1030
 F 0 "R6" V 1210 1030 50  0000 C CNN
 F 1 "R" V 1130 1030 50  0000 C CNN
-F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 1060 1030 50  0001 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 1060 1030 50  0001 C CNN
 F 3 "" H 1130 1030 50  0000 C CNN
 	1    1130 1030
 	1    0    0    -1  
@@ -160,7 +160,7 @@ GND
 Text Label 2100 1620 0    39   ~ 0
 VOUT
 Text Label 660  2140 0    39   ~ 0
-VCONTROL_1
+VCONTROL_5
 Text Notes 660  1580 0    39   ~ 0
 Resistor Variable 1
 $Comp
@@ -309,17 +309,6 @@ F 3 "" H 4500 1270 39  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L 1nF C4
-U 1 1 59D40CE7
-P 5130 1220
-F 0 "C4" H 5140 1290 50  0000 L CNN
-F 1 "1nF" H 5140 1140 50  0000 L CNN
-F 2 "Capacitors_SMD:C_1206_HandSoldering" H 5040 1190 50  0001 C CNN
-F 3 "" H 5140 1290 50  0000 C CNN
-	1    5130 1220
-	1    0    0    -1  
-$EndComp
-$Comp
 L 0,1uF C5
 U 1 1 59D44EBB
 P 5370 780
@@ -373,9 +362,9 @@ F 3 "" H 5200 4450 50  0000 C CNN
 	1    5200 4450
 	1    0    0    -1  
 $EndComp
-Text Label 4660 4400 0    39   ~ 0
-V_FUENTE
 Text Label 4660 4500 0    39   ~ 0
+V_FUENTE
+Text Label 4660 4400 0    39   ~ 0
 GND
 Text Label 4680 5330 0    39   ~ 0
 GND
@@ -710,7 +699,7 @@ GND
 Text Label 2100 2890 0    39   ~ 0
 VOUT
 Text Label 660  3410 0    39   ~ 0
-VCONTROL_2
+VCONTROL_4
 Text Notes 660  2850 0    39   ~ 0
 Resistor Variable 2\n
 $Comp
@@ -892,7 +881,7 @@ GND
 Text Label 2120 5380 0    39   ~ 0
 VOUT
 Text Label 680  5900 0    39   ~ 0
-VCONTROL_4
+VCONTROL_6
 Text Notes 680  5380 0    39   ~ 0
 Resistor Variable 4\n
 $Comp
@@ -983,7 +972,7 @@ GND
 Text Label 2130 6610 0    39   ~ 0
 VOUT
 Text Label 690  7130 0    39   ~ 0
-VCONTROL_5
+VCONTROL_8
 Text Notes 690  6620 0    39   ~ 0
 Resistor Variable 5
 Wire Notes Line
@@ -1628,7 +1617,7 @@ GND
 Text Label 3960 4140 0    39   ~ 0
 VOUT
 Text Label 2520 4660 0    39   ~ 0
-VCONTROL_6
+VCONTROL_7
 Text Notes 2540 4160 0    39   ~ 0
 Resistor Variable 6
 $Comp
@@ -1719,7 +1708,7 @@ GND
 Text Label 3970 5380 0    39   ~ 0
 VOUT
 Text Label 2530 5900 0    39   ~ 0
-VCONTROL_7
+VCONTROL_2
 Text Notes 2530 5380 0    39   ~ 0
 Resistor Variable 7
 $Comp
@@ -1810,7 +1799,7 @@ GND
 Text Label 3980 6610 0    39   ~ 0
 VOUT
 Text Label 2540 7130 0    39   ~ 0
-VCONTROL_8
+VCONTROL_1
 Text Notes 2540 6620 0    39   ~ 0
 Resistor Variable 8
 Wire Wire Line
@@ -2064,27 +2053,6 @@ Wire Notes Line
 	6570 4720 5520 4720
 Text Notes 6120 4060 0    39   ~ 0
 Reset Micro
-$Comp
-L CONN_01X02 P11
-U 1 1 59CF6F3A
-P 6100 5160
-F 0 "P11" H 6100 5310 50  0000 C CNN
-F 1 "CONM_R1" V 6200 5160 50  0000 C CNN
-F 2 "Socket_Strips:Socket_Strip_Straight_1x02_Pitch2.54mm" H 6100 5160 50  0001 C CNN
-F 3 "" H 6100 5160 50  0000 C CNN
-	1    6100 5160
-	1    0    0    -1  
-$EndComp
-Text Notes 5590 4870 0    39   ~ 0
-Conectores Fuente Conmutada
-Wire Wire Line
-	5900 5110 5710 5110
-Wire Wire Line
-	5900 5210 5710 5210
-Text Label 5710 5110 0    39   ~ 0
-VOUT
-Text Label 5710 5210 0    39   ~ 0
-VFB
 Text Label 4840 7120 0    39   ~ 0
 5V
 $Comp
@@ -2111,4 +2079,17 @@ F 4 "RMCF0805FT10K0TR-ND" H 5080 7420 39  0001 C CNN "RES SMD 10K OHM 1% 1/8W 08
 	1    4950 7300
 	1    0    0    -1  
 $EndComp
+$Comp
+L 1nF_THT C4
+U 1 1 59D0DD60
+P 5130 1220
+F 0 "C4" H 5140 1290 50  0000 L CNN
+F 1 "1nF_THT" H 5140 1140 50  0000 L CNN
+F 2 "Capacitors_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm" H 5040 1190 50  0001 C CNN
+F 3 "" H 5140 1290 50  0000 C CNN
+	1    5130 1220
+	1    0    0    -1  
+$EndComp
+Text Label 5140 910  0    39   ~ 0
+5V
 $EndSCHEMATC

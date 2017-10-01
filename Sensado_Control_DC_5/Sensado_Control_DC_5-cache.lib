@@ -108,12 +108,12 @@ X ~ 2 0 -100 30 U 40 40 1 1 P
 ENDDRAW
 ENDDEF
 #
-# 1nF
+# 1nF_THT
 #
-DEF 1nF C 0 10 N N 1 F N
+DEF 1nF_THT C 0 10 N N 1 F N
 F0 "C" 10 70 50 H V L CNN
-F1 "1nF" 10 -80 50 H V L CNN
-F2 "Capacitors_SMD:C_1206_HandSoldering" -90 -30 50 H I C CNN
+F1 "1nF_THT" 10 -80 50 H V L CNN
+F2 "Capacitors_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm" -90 -30 50 H I C CNN
 F3 "" 10 70 50 H V C CNN
 $FPLIST
  C?
