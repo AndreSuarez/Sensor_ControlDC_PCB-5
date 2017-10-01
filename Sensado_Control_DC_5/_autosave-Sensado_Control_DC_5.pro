@@ -1,6 +1,10 @@
-update=01/10/2017 11:23:50
+update=22/05/2015 07:44:53
 version=1
 last_client=kicad
+[general]
+version=1
+RootSch=
+BoardNm=
 [pcbnew]
 version=1
 LastNetListRead=
@@ -56,6 +60,3 @@ LibName26=opto
 LibName27=atmel
 LibName28=contrib
 LibName29=valves
-LibName30=C:/Users/ACER/Documents/GitHub/Bio_MicroMain_PCB-1/Libreria_Proyecto_Bio/Libreria_Bioimpedancia
-[general]
-version=1

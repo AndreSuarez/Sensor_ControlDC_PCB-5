@@ -2090,4 +2090,6 @@ F 3 "" H 5140 1290 50  0000 C CNN
 	1    5130 1220
 	1    0    0    -1  
 $EndComp
+Text Label 5140 910  0    39   ~ 0
+5V
 $EndSCHEMATC
