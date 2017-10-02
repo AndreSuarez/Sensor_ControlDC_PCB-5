@@ -404,20 +404,9 @@ Text Label 4630 6150 0    39   ~ 0
 MISO
 Text Label 4630 6250 0    39   ~ 0
 SCK
-$Comp
-L CONN_01X02 P6
-U 1 1 59DABC73
-P 5200 6890
-F 0 "P6" H 5200 7040 50  0000 C CNN
-F 1 "I2C" V 5300 6890 50  0000 C CNN
-F 2 "Socket_Strips:Socket_Strip_Straight_1x02_Pitch2.54mm" H 5200 6890 50  0001 C CNN
-F 3 "" H 5200 6890 50  0000 C CNN
-	1    5200 6890
-	1    0    0    -1  
-$EndComp
-Text Label 4660 6840 0    39   ~ 0
+Text Label 6400 6760 2    39   ~ 0
 SDA
-Text Label 4660 6940 0    39   ~ 0
+Text Label 5220 6760 0    39   ~ 0
 SCL
 Text Notes 4560 6610 0    39   ~ 0
 Resistencias Pull-up\n- Comunicacion I2C
@@ -432,32 +421,32 @@ SCL_E
 $Comp
 L Jumper J1
 U 1 1 59DB5A77
-P 5830 6830
-F 0 "J1" V 5640 6760 50  0000 L CNN
-F 1 "Jumper" V 5720 6750 50  0000 L CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 5830 6830 50  0001 C CNN
-F 3 "" H 5830 6830 50  0000 C CNN
-	1    5830 6830
+P 5900 7370
+F 0 "J1" V 5710 7300 50  0000 L CNN
+F 1 "Jumper" V 5790 7290 50  0000 L CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 5900 7370 50  0001 C CNN
+F 3 "" H 5900 7370 50  0000 C CNN
+	1    5900 7370
 	0    1    1    0   
 $EndComp
 $Comp
 L Jumper J2
 U 1 1 59DB5B56
-P 5840 6940
-F 0 "J2" V 5900 6870 50  0000 L CNN
-F 1 "Jumper" V 5970 6870 50  0000 L CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 5840 6940 50  0001 C CNN
-F 3 "" H 5840 6940 50  0000 C CNN
-	1    5840 6940
+P 5910 7480
+F 0 "J2" V 5970 7410 50  0000 L CNN
+F 1 "Jumper" V 6040 7410 50  0000 L CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 5910 7480 50  0001 C CNN
+F 3 "" H 5910 7480 50  0000 C CNN
+	1    5910 7480
 	0    1    1    0   
 $EndComp
-Text Label 5430 6830 0    39   ~ 0
+Text Label 5500 7370 0    39   ~ 0
 SDA_E
-Text Label 5430 6940 0    39   ~ 0
+Text Label 5500 7480 0    39   ~ 0
 SCL_E
-Text Label 6120 6830 0    39   ~ 0
+Text Label 6190 7370 0    39   ~ 0
 SDA
-Text Label 6120 6940 0    39   ~ 0
+Text Label 6190 7480 0    39   ~ 0
 SCL
 Text Label 4350 660  0    39   ~ 0
 GND
@@ -1566,11 +1555,11 @@ Wire Notes Line
 Wire Notes Line
 	2490 3940 2490 1500
 Wire Wire Line
-	3220 2200 2610 2200
+	2610 2200 3220 2200
 Wire Wire Line
-	3220 2400 2610 2400
+	2610 2400 3220 2400
 Wire Wire Line
-	4950 2000 4340 2000
+	4340 2000 4950 2000
 Wire Wire Line
 	2880 1900 3220 1900
 Wire Wire Line
@@ -1767,11 +1756,11 @@ Wire Wire Line
 Wire Wire Line
 	5020 6250 4630 6250
 Wire Notes Line
-	4330 6470 6300 6470
+	4330 6470 6490 6470
 Wire Wire Line
-	5000 6840 4660 6840
+	6060 6760 6400 6760
 Wire Wire Line
-	5000 6940 4660 6940
+	5560 6760 5220 6760
 Wire Notes Line
 	4330 6470 4330 7690
 Wire Wire Line
@@ -1791,17 +1780,15 @@ Wire Wire Line
 	4430 7610 5230 7610
 Connection ~ 4950 7610
 Wire Wire Line
-	5430 6830 5730 6830
+	5500 7370 5800 7370
 Wire Wire Line
-	5430 6940 5740 6940
+	5500 7480 5810 7480
 Wire Wire Line
-	5930 6830 6120 6830
+	6000 7370 6190 7370
 Wire Wire Line
-	5940 6940 6120 6940
+	6010 7480 6190 7480
 Wire Notes Line
-	6300 6470 6300 7690
-Wire Notes Line
-	6300 7690 4330 7690
+	4330 7690 6490 7690
 Wire Wire Line
 	5040 660  5040 910 
 Connection ~ 5040 910 
@@ -2250,4 +2237,33 @@ Wire Wire Line
 	2860 7510 2860 7580
 Wire Wire Line
 	2860 7580 2960 7580
+$Comp
+L CONN_02X03 P6
+U 1 1 59D41214
+P 5810 6760
+F 0 "P6" H 5810 6960 50  0000 C CNN
+F 1 "I2C" H 5810 6560 50  0000 C CNN
+F 2 "Socket_Strips:Socket_Strip_Straight_2x03_Pitch2.54mm" H 5810 5560 50  0001 C CNN
+F 3 "" H 5810 5560 50  0000 C CNN
+	1    5810 6760
+	1    0    0    -1  
+$EndComp
+Text Label 5220 6660 0    39   ~ 0
+SCL
+Wire Wire Line
+	5560 6660 5220 6660
+Text Label 5220 6860 0    39   ~ 0
+SCL
+Wire Wire Line
+	5560 6860 5220 6860
+Text Label 6400 6660 2    39   ~ 0
+SDA
+Wire Wire Line
+	6060 6660 6400 6660
+Text Label 6400 6860 2    39   ~ 0
+SDA
+Wire Wire Line
+	6060 6860 6400 6860
+Wire Notes Line
+	6490 7690 6490 6470
 $EndSCHEMATC
