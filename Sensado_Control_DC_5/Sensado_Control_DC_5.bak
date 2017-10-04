@@ -351,26 +351,15 @@ Text Label 4660 4500 0    39   ~ 0
 V_FUENTE
 Text Label 4660 4400 0    39   ~ 0
 GND
-Text Label 4680 5330 0    39   ~ 0
+Text Label 4760 5260 0    39   ~ 0
 GND
 Text Notes 4560 4100 0    39   ~ 0
 Pines de Alimentacion
 Text Notes 4570 4970 0    39   ~ 0
 Conector Progrmador \ndel Microcontrolador \n- Debuger (RS-232)
-$Comp
-L CONN_01X03 P5
-U 1 1 59D9D14F
-P 5200 5230
-F 0 "P5" H 5200 5430 50  0000 C CNN
-F 1 "RS-232" V 5300 5230 50  0000 C CNN
-F 2 "Socket_Strips:Socket_Strip_Straight_1x03_Pitch2.54mm" H 5200 5230 50  0001 C CNN
-F 3 "" H 5200 5230 50  0000 C CNN
-	1    5200 5230
-	1    0    0    -1  
-$EndComp
-Text Label 4680 5230 0    39   ~ 0
+Text Label 4760 5160 0    39   ~ 0
 TXD
-Text Label 4680 5130 0    39   ~ 0
+Text Label 4760 5060 0    39   ~ 0
 RXD
 Text Notes 4590 5730 0    39   ~ 0
 Quemador Bootloader -\nComunicacion SPI
@@ -1723,11 +1712,11 @@ Wire Notes Line
 Wire Notes Line
 	5460 5510 5460 4770
 Wire Wire Line
-	5000 5330 4680 5330
+	5080 5260 4760 5260
 Wire Wire Line
-	4680 5230 5000 5230
+	4760 5160 5080 5160
 Wire Wire Line
-	5000 5130 4680 5130
+	5080 5060 4760 5060
 Wire Notes Line
 	5460 5560 4330 5560
 Wire Notes Line
@@ -2392,4 +2381,49 @@ Text Label 8300 1230 1    39   ~ 0
 VOUT
 Text Label 8630 1230 1    39   ~ 0
 VFB
+Text Notes 7690 1350 0    39   ~ 0
+Test Points
+$Comp
+L CONN_01X04 P5
+U 1 1 59D9CDF4
+P 5280 5210
+F 0 "P5" H 5280 5460 50  0000 C CNN
+F 1 "RS-232" V 5380 5210 50  0000 C CNN
+F 2 "Socket_Strips:Socket_Strip_Straight_1x04_Pitch2.54mm" H 5280 5210 50  0001 C CNN
+F 3 "" H 5280 5210 50  0000 C CNN
+	1    5280 5210
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4730 5360 5080 5360
+Wire Wire Line
+	4530 5360 4390 5360
+Wire Wire Line
+	4390 5360 4390 5270
+Text Label 4390 5270 0    39   ~ 0
+RESET
+$Comp
+L 0,1uF C10
+U 1 1 59D9EA18
+P 4630 5360
+F 0 "C10" V 4580 5400 50  0000 L CNN
+F 1 "0,1uF" V 4680 5410 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 4540 5330 50  0001 C CNN
+F 3 "" H 4630 5360 50  0000 C CNN
+F 4 "478-1395-2-ND" H 4740 5530 118 0001 C CNN "CAP CER 0.1UF 50V X7R 0805"
+	1    4630 5360
+	0    1    1    0   
+$EndComp
+$Comp
+L CONN_01X01 P15
+U 1 1 59DA56FE
+P 6350 4220
+F 0 "P15" H 6330 4320 50  0000 C CNN
+F 1 "J_RESET" V 6450 4220 50  0000 C CNN
+F 2 "Socket_Strips:Socket_Strip_Straight_1x01_Pitch2.54mm" H 6350 4220 50  0001 C CNN
+F 3 "" H 6350 4220 50  0000 C CNN
+	1    6350 4220
+	1    0    0    -1  
+$EndComp
+NoConn ~ 6150 4220
 $EndSCHEMATC
