@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source C:/Users/ACER/Documents/GitHub/Sensor_ControlDC_PCB-5/Sensado_Control_DC_5/Sensado_Control_DC_5.sch)
-    (date "05/10/2017 9:11:00")
+    (date "05/10/2017 10:02:27")
     (tool "Eeschema 4.0.2-stable")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -547,7 +547,7 @@
       (tstamp 59D118B1))
     (comp (ref C8)
       (value 8pF)
-      (footprint Capacitors_SMD:C_0805_HandSoldering)
+      (footprint Capacitors_SMD:C_0402)
       (fields
         (field (name "CAP CER 22PF 50V C0G/NP0 0805") 399-1113-2-ND))
       (libsource (lib Libreria_Bioimpedancia) (part 8pF))
@@ -555,7 +555,7 @@
       (tstamp 59D13289))
     (comp (ref C7)
       (value 8pF)
-      (footprint Capacitors_SMD:C_0805_HandSoldering)
+      (footprint Capacitors_SMD:C_0402)
       (fields
         (field (name "CAP CER 22PF 50V C0G/NP0 0805") 399-1113-2-ND))
       (libsource (lib Libreria_Bioimpedancia) (part 8pF))
@@ -1014,10 +1014,10 @@
   (libraries
     (library (logical conn)
       (uri "C:\\Program Files\\KiCad\\share\\kicad\\library\\conn.lib"))
-    (library (logical Libreria_Bioimpedancia)
-      (uri C:\Users\ACER\Documents\GitHub\Bio_MicroMain_PCB-1\Libreria_Proyecto_Bio\Libreria_Bioimpedancia.lib))
     (library (logical device)
-      (uri "C:\\Program Files\\KiCad\\share\\kicad\\library\\device.lib")))
+      (uri "C:\\Program Files\\KiCad\\share\\kicad\\library\\device.lib"))
+    (library (logical Libreria_Bioimpedancia)
+      (uri C:\Users\ACER\Documents\GitHub\Bio_MicroMain_PCB-1\Libreria_Proyecto_Bio\Libreria_Bioimpedancia.lib)))
   (nets
     (net (code 1) (name /SDA_E)
       (node (ref J1) (pin 2))
