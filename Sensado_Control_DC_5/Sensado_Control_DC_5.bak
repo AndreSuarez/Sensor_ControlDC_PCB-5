@@ -2428,5 +2428,5 @@ $EndComp
 Wire Wire Line
 	6150 4220 6030 4220
 Text Label 6030 4220 0    39   ~ 0
-5V
+AGND
 $EndSCHEMATC

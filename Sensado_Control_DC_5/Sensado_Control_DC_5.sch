@@ -382,49 +382,41 @@ Text Label 4630 6150 0    39   ~ 0
 MISO
 Text Label 4630 6250 0    39   ~ 0
 SCK
-Text Label 6400 6760 2    39   ~ 0
+Text Label 5940 7380 2    39   ~ 0
 SDA
-Text Label 5220 6760 0    39   ~ 0
+Text Label 4760 7380 0    39   ~ 0
 SCL
 Text Notes 4560 6610 0    39   ~ 0
 Resistencias Pull-up\n- Comunicacion I2C
-Text Label 4430 7500 0    39   ~ 0
-SDA_E
-Text Label 4430 7610 0    39   ~ 0
-SCL_E
-Text Label 5230 7500 0    39   ~ 0
-SDA_E
-Text Label 5230 7610 0    39   ~ 0
-SCL_E
 $Comp
 L Jumper J1
 U 1 1 59DB5A77
-P 5900 7370
-F 0 "J1" V 5710 7300 50  0000 L CNN
-F 1 "Jumper" V 5790 7290 50  0000 L CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 5900 7370 50  0001 C CNN
-F 3 "" H 5900 7370 50  0000 C CNN
-	1    5900 7370
+P 5310 6840
+F 0 "J1" V 5120 6770 50  0000 L CNN
+F 1 "Jumper" V 5200 6760 50  0000 L CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 5310 6840 50  0001 C CNN
+F 3 "" H 5310 6840 50  0000 C CNN
+	1    5310 6840
 	0    1    1    0   
 $EndComp
 $Comp
 L Jumper J2
 U 1 1 59DB5B56
-P 5910 7480
-F 0 "J2" V 5970 7410 50  0000 L CNN
-F 1 "Jumper" V 6040 7410 50  0000 L CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 5910 7480 50  0001 C CNN
-F 3 "" H 5910 7480 50  0000 C CNN
-	1    5910 7480
+P 5320 6950
+F 0 "J2" V 5380 6880 50  0000 L CNN
+F 1 "Jumper" V 5450 6880 50  0000 L CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 5320 6950 50  0001 C CNN
+F 3 "" H 5320 6950 50  0000 C CNN
+	1    5320 6950
 	0    1    1    0   
 $EndComp
-Text Label 5500 7370 0    39   ~ 0
+Text Label 4910 6840 0    39   ~ 0
 SDA_E
-Text Label 5500 7480 0    39   ~ 0
+Text Label 4910 6950 0    39   ~ 0
 SCL_E
-Text Label 6190 7370 0    39   ~ 0
+Text Label 5600 6840 0    39   ~ 0
 SDA
-Text Label 6190 7480 0    39   ~ 0
+Text Label 5600 6950 0    39   ~ 0
 SCL
 Text Label 4350 660  0    39   ~ 0
 GND
@@ -1261,32 +1253,6 @@ Text Label 5920 4100 0    39   ~ 0
 5V
 Text Notes 6120 4060 0    39   ~ 0
 Reset Micro
-Text Label 4840 7120 0    39   ~ 0
-5V
-$Comp
-L 10K R42
-U 1 1 59D27397
-P 4720 7300
-F 0 "R42" H 4750 7320 50  0000 L CNN
-F 1 "10K" H 4750 7260 50  0000 L CNN
-F 2 "Resistors_SMD:R_0805_HandSoldering" H 4650 7220 50  0001 C CNN
-F 3 "" H 4720 7300 50  0000 C CNN
-F 4 "RMCF0805FT10K0TR-ND" H 4850 7420 39  0001 C CNN "RES SMD 10K OHM 1% 1/8W 0805"
-	1    4720 7300
-	1    0    0    -1  
-$EndComp
-$Comp
-L 10K R44
-U 1 1 59D27507
-P 4950 7300
-F 0 "R44" H 4980 7320 50  0000 L CNN
-F 1 "10K" H 4980 7260 50  0000 L CNN
-F 2 "Resistors_SMD:R_0805_HandSoldering" H 4880 7220 50  0001 C CNN
-F 3 "" H 4950 7300 50  0000 C CNN
-F 4 "RMCF0805FT10K0TR-ND" H 5080 7420 39  0001 C CNN "RES SMD 10K OHM 1% 1/8W 0805"
-	1    4950 7300
-	1    0    0    -1  
-$EndComp
 $Comp
 L 1nF_THT C4
 U 1 1 59D0DD60
@@ -1736,35 +1702,19 @@ Wire Wire Line
 Wire Notes Line
 	4330 6470 6490 6470
 Wire Wire Line
-	6060 6760 6400 6760
+	5600 7380 5940 7380
 Wire Wire Line
-	5560 6760 5220 6760
+	5100 7380 4760 7380
 Wire Notes Line
 	4330 6470 4330 7690
 Wire Wire Line
-	4720 7120 4720 7200
+	4910 6840 5210 6840
 Wire Wire Line
-	4720 7120 4950 7120
+	4910 6950 5220 6950
 Wire Wire Line
-	4950 7120 4950 7200
+	5410 6840 5600 6840
 Wire Wire Line
-	4720 7400 4720 7500
-Wire Wire Line
-	4430 7500 5230 7500
-Connection ~ 4720 7500
-Wire Wire Line
-	4950 7400 4950 7610
-Wire Wire Line
-	4430 7610 5230 7610
-Connection ~ 4950 7610
-Wire Wire Line
-	5500 7370 5800 7370
-Wire Wire Line
-	5500 7480 5810 7480
-Wire Wire Line
-	6000 7370 6190 7370
-Wire Wire Line
-	6010 7480 6190 7480
+	5420 6950 5600 6950
 Wire Notes Line
 	4330 7690 6490 7690
 Wire Wire Line
@@ -2218,30 +2168,30 @@ Wire Wire Line
 $Comp
 L CONN_02X03 P6
 U 1 1 59D41214
-P 5810 6760
-F 0 "P6" H 5810 6960 50  0000 C CNN
-F 1 "I2C" H 5810 6560 50  0000 C CNN
-F 2 "Socket_Strips:Socket_Strip_Straight_2x03_Pitch2.54mm" H 5810 5560 50  0001 C CNN
-F 3 "" H 5810 5560 50  0000 C CNN
-	1    5810 6760
+P 5350 7380
+F 0 "P6" H 5350 7580 50  0000 C CNN
+F 1 "I2C" H 5350 7180 50  0000 C CNN
+F 2 "Socket_Strips:Socket_Strip_Straight_2x03_Pitch2.54mm" H 5350 6180 50  0001 C CNN
+F 3 "" H 5350 6180 50  0000 C CNN
+	1    5350 7380
 	1    0    0    -1  
 $EndComp
-Text Label 5220 6660 0    39   ~ 0
+Text Label 4760 7280 0    39   ~ 0
 SCL
 Wire Wire Line
-	5560 6660 5220 6660
-Text Label 5220 6860 0    39   ~ 0
+	5100 7280 4760 7280
+Text Label 4760 7480 0    39   ~ 0
 SCL
 Wire Wire Line
-	5560 6860 5220 6860
-Text Label 6400 6660 2    39   ~ 0
+	5100 7480 4760 7480
+Text Label 5940 7280 2    39   ~ 0
 SDA
 Wire Wire Line
-	6060 6660 6400 6660
-Text Label 6400 6860 2    39   ~ 0
+	5600 7280 5940 7280
+Text Label 5940 7480 2    39   ~ 0
 SDA
 Wire Wire Line
-	6060 6860 6400 6860
+	5600 7480 5940 7480
 Wire Notes Line
 	6490 7690 6490 6470
 $Comp
