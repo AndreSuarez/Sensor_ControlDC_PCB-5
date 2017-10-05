@@ -2425,5 +2425,8 @@ F 3 "" H 6350 4220 50  0000 C CNN
 	1    6350 4220
 	1    0    0    -1  
 $EndComp
-NoConn ~ 6150 4220
+Wire Wire Line
+	6150 4220 6030 4220
+Text Label 6030 4220 0    39   ~ 0
+AGND
 $EndSCHEMATC
